@@ -1,5 +1,12 @@
 # @makersteam-dev/developer
 
+## 1.0.4
+
+### Patch Changes
+
+- 03b9f80: Click event
+- 4f4d1f1: click
+
 ## 1.0.3
 
 ### Patch Changes
