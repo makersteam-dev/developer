@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.0.5
+
+### Patch Changes
+
+- 510e48c: Click industry
+
 ## 1.0.4
 
 ### Patch Changes
