@@ -19,7 +19,9 @@
   "type": "module",
   "main": "src/index.ts",
   "module": "src/index.ts",
-
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development node ./bin/build.js",
     "build": "cross-env NODE_ENV=production node ./bin/build.js",
