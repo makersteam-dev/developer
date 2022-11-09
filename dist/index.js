@@ -1,1 +1,1 @@
-"use strict";(()=>{var t=()=>{var r;let o="Last Published:";for(let e of document.childNodes)if(e.nodeType===Node.COMMENT_NODE&&((r=e.textContent)==null?void 0:r.includes(o))){let n=e.textContent.trim().split(o)[1];if(n)return new Date(n)}};console.log(t);})();
+"use strict";(()=>{})();
