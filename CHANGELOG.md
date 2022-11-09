@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.0.2
+
+### Patch Changes
+
+- c727669: Add page load for filtering industry
+
 ## 1.0.1
 
 ### Patch Changes
