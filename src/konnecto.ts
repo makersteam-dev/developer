@@ -1,6 +1,9 @@
-window.onload = function () {
+window.Webflow ||= [];
+
+window.Webflow.push(() => {
   $(':radio[value=cryptocurrency]').trigger('click');
-};
+});
+
 /*Company name on lottie on everywhere else */
 $('[name=company-name]').on('input', function () {
   let company_name = $('[name=company-name]').val();
