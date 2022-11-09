@@ -5,7 +5,7 @@ const buildDirectory = 'dist';
 const production = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
-const entryPoints = ['src/index.ts', 'src/multistep.ts'];
+const entryPoints = ['src/index.ts', 'src/multistep.ts', 'src/utils/konnecto.js'];
 
 /**
  * Default Settings

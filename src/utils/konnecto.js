@@ -1,8 +1,8 @@
 $(() => {
   $(':radio[value=cryptocurrency]').trigger('click');
 });
-window.Webflow ||= [];
-window.Webflow.push(() => {
+var Webflow = Webflow || [];
+Webflow.push(function () {
   /*Company name on lottie on everywhere else */
   $('[name=company-name]').on('input', function () {
     let company_name = $('[name=company-name]').val();
@@ -39,20 +39,20 @@ window.Webflow.push(() => {
   // give specific id and value for each dynamic radio
   $('input[type=radio][name=product]').each(function () {
     // get label name
-    const radioName = $(this).next('.w-form-label').text().trim();
+    let radioName = $(this).next('.w-form-label').text().trim();
     $(this).val(radioName);
     // format name to a valid id
     // replace all spaces & non-alphanumeric characters with dashes
     // make it lowercase
-    const id = radioName.replace(/\W+/g, '-').toLowerCase();
+    let id = radioName.replace(/\W+/g, '-').toLowerCase();
     // change the id attribute of the radio
     $(this).attr('id', id);
   });
 
   /*obserber to change lottie images and all the functions */
-  const observer = new IntersectionObserver((entries) => {
+  let observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      const intersecting = entry.isIntersecting;
+      let intersecting = entry.isIntersecting;
       if (intersecting) {
         $('[data-form=back-btn]').hide();
         /*Open opertunities modal*/
@@ -82,10 +82,12 @@ window.Webflow.push(() => {
             .find('[mt-element=segment-3-image]')
             .attr('src');
           $('.segment3-img > image').attr('href', imageTarget_3);
+          console.log('yesh');
         }, 2000);
 
         setTimeout(function () {
           $('[mt-element=hidden-next]').trigger('click');
+          console.log('clicked');
         }, 12000);
       }
     });
