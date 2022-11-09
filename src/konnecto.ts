@@ -1,7 +1,7 @@
-function clickIndustry() {
+document.addEventListener('DOMContentLoaded', function () {
   $(':radio[value=cryptocurrency]').trigger('click');
-}
-clickIndustry();
+});
+
 /*Company name on lottie on everywhere else */
 $('[name=company-name]').on('input', function () {
   let company_name = $('[name=company-name]').val();
