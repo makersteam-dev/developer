@@ -1,13 +1,13 @@
 {
-  "name": "@finsweet/developer-starter",
+  "name": "@makersteam-dev/developer",
   "version": "1.0.0",
-  "description": "Developer starter template for Finsweet projects.",
-  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "description": "Developer starter template for MakersTeam projects.",
+  "homepage": "https://github.com/makersteam-dev/developer",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://www.finsweet.com/"
+    "name": "MakersTeam",
+    "url": "https://www.makersteam.co/"
   },
   "repository": {
     "type": "git",
