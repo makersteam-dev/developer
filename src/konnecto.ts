@@ -1,9 +1,8 @@
-window.Webflow ||= [];
 
-window.Webflow.push(() => {
+let firstButton = document.querySelector('mt-e=firsButton');
+firstButton.onclick = function() {
   $(':radio[value=cryptocurrency]').trigger('click');
-});
-
+}​;
 /*Company name on lottie on everywhere else */
 $('[name=company-name]').on('input', function () {
   let company_name = $('[name=company-name]').val();
