@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.0.6
+
+### Patch Changes
+
+- 072b3e5: onload click
+
 ## 1.0.5
 
 ### Patch Changes
