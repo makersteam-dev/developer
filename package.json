@@ -2,7 +2,7 @@
   "name": "@makersteam-dev/developer",
   "version": "1.0.0",
   "description": "Developer starter template for MakersTeam projects.",
-  "homepage": "https://github.com/makersteam-dev/developer",
+  "homepage": "https://github.com/makersteam-dev",
   "license": "ISC",
   "keywords": [],
   "author": {
@@ -19,9 +19,7 @@
   "type": "module",
   "main": "src/index.ts",
   "module": "src/index.ts",
-  "files": [
-    "dist"
-  ],
+
   "scripts": {
     "dev": "cross-env NODE_ENV=development node ./bin/build.js",
     "build": "cross-env NODE_ENV=production node ./bin/build.js",
