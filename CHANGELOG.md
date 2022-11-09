@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.0.3
+
+### Patch Changes
+
+- 15c6c8a: Industry button click
+
 ## 1.0.2
 
 ### Patch Changes
