@@ -1,4 +1,4 @@
-$(() => {
+$(document).ready(function () {
   $(':radio[value=cryptocurrency]').trigger('click');
 });
 var Webflow = Webflow || [];
