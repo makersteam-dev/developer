@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   $(':radio[value=cryptocurrency]').trigger('click');
 });
 
-/*Company name on lottie on everywhere else */
+// on change of company input function
+
 $('[name=company-name]').on('input', function () {
   let company_name = $('[name=company-name]').val();
   $('.company-lottie-name > text > tspan').text(company_name);
@@ -12,7 +13,7 @@ $('[name=company-name]').on('input', function () {
   $('[mt-element=company-name]').text(company_name);
 });
 
-/*Industry click fiter the product step items */
+// Industry click fiter the product step items
 $('input[type=radio][name=industry]').on('click', function () {
   let industryVal = $(this).val();
   let industryValFull = $(this).siblings().text();
@@ -48,13 +49,13 @@ $('input[type=radio][name=product]').each(function () {
   $(this).attr('id', id);
 });
 
-/*obserber to change lottie images and all the functions */
+// obserber to change lottie images and all the functions
 let observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     let intersecting = entry.isIntersecting;
     if (intersecting) {
       $('[data-form=back-btn]').hide();
-      /*Open opertunities modal*/
+      // Open opertunities modal
       $('[mt-element=open-modal]').on('click', function () {
         $('[mt-element=unlock-form]').css('display', 'flex');
       });
@@ -93,7 +94,7 @@ let observer = new IntersectionObserver((entries) => {
 });
 observer.observe(document.querySelector('.last-lottie'));
 
-/*audience next step closes opens*/
+// audience next step closes opens
 $('[mt-element=audience-item]').on('click', function () {
   $(this).closest('[mt-element=see-segments]').addClass('hide');
 });
