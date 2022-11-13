@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.0
+
+### Minor Changes
+
+- 31f3447: Code update
+
 ## 1.0.7
 
 ### Patch Changes
