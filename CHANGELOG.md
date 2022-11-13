@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.0.7
+
+### Patch Changes
+
+- 09fa50a: First Lottie input change update
+
 ## 1.0.6
 
 ### Patch Changes
