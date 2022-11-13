@@ -12,29 +12,29 @@ data-quiz=true
 Enables FormlyLogic
 */
 
-var x = 0;
-var curStep = 0;
-var steps = $('[data-form="step"]');
-var progressbarClone = $('[data-form="progress-indicator"]').clone();
-var progressbar;
-var fill = false;
-var inputFilled = true;
-var radioFilled = true;
-var checkboxFilled = true;
-var emailFilled = true;
-var answer = '';
-var selections = [];
-var selection = [];
-var empReqInput = [];
-var reinitIX = $('[data-reinit]').data('reinit');
-var textareaLength = 0;
-var textInputLength = 0;
-var emailInputLength = 0;
-var checkboxInputLength = 0;
-var filledInput = [];
-var savedFilledInput = JSON.parse(localStorage.getItem('filledInput'));
-var memory = $('[data-memory]').data('memory');
-var quiz = $('[data-quiz]').data('quiz');
+let x = 0;
+let curStep = 0;
+const steps = $('[data-form="step"]');
+const progressbarClone = $('[data-form="progress-indicator"]').clone();
+let progressbar;
+let fill = false;
+let inputFilled = true;
+let radioFilled = true;
+let checkboxFilled = true;
+let emailFilled = true;
+let answer = '';
+let selections = [];
+let selection = [];
+let empReqInput = [];
+let reinitIX = $('[data-reinit]').data('reinit');
+let textareaLength = 0;
+let textInputLength = 0;
+let emailInputLength = 0;
+let checkboxInputLength = 0;
+let filledInput = [];
+let savedFilledInput = JSON.parse(localStorage.getItem('filledInput'));
+let memory = $('[data-memory]').data('memory');
+let quiz = $('[data-quiz]').data('quiz');
 
 $(progressbarClone).removeClass('current');
 $('[data-form="progress"]').children().remove();
@@ -202,7 +202,7 @@ function updateStep() {
 }
 
 function validateEmail(email) {
-  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  let emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
   console.log('email', email);
   if (!emailReg.test(email)) {
     emailFilled = false;
@@ -226,7 +226,7 @@ function validation(input) {
     enableBtn();
   }
 
-  var checkCount = $(steps[x]).data('checkbox') ? $(steps[x]).data('checkbox') : 0;
+  let checkCount = $(steps[x]).data('checkbox') ? $(steps[x]).data('checkbox') : 0;
 
   if (!$('[data-logic-extra]').data('logic-extra')) {
     if ($(steps[x]).find(':input').is('[type="checkbox"]')) {
