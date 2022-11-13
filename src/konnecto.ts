@@ -1,16 +1,27 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   $(':radio[value=cryptocurrency]').trigger('click');
 });
 
+const companyInput = document.querySelector<HTMLInputElement>('[name=company-name]');
+const companyTextsSelector = document.querySelectorAll('[mt-element=company-name]');
+
 // on change of company input function
-
-$('[name=company-name]').on('input', function () {
+companyInput.addEventListener('input', function () {
   let company_name = $('[name=company-name]').val();
-  $('.company-lottie-name > text > tspan').text(company_name);
-  $('.competitorName > text > tspan').text(company_name);
-  sessionStorage.setItem('companyName', company_name);
+  if ($(this).val().length < 1) {
+    $('.company-lottie-name > text > tspan').text('Your Company');
+    $('.company-lottie-name').css('font-weight', '400').css('fill', 'rgb(227,233,238)');
+  } else {
+    $('.company-lottie-name > text > tspan').text(company_name);
+    $('.company-lottie-name').css('font-weight', '600').css('fill', 'black');
 
-  $('[mt-element=company-name]').text(company_name);
+    $('.competitorName > text > tspan').text(company_name);
+    sessionStorage.setItem('companyName', company_name);
+
+    for (let i = 0; i < companyTextsSelector.length; i++) {
+      companyTextsSelector[i].innerText = company_name;
+    }
+  }
 });
 
 // Industry click fiter the product step items
