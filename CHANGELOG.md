@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.1
+
+### Patch Changes
+
+- 009ac3d: Button update and fix code
+
 ## 1.1.0
 
 ### Minor Changes
