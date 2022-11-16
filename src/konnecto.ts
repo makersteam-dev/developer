@@ -69,6 +69,14 @@ const observer = new IntersectionObserver((entries) => {
       $('[mt-element=open-modal]').on('click', function () {
         $('[mt-element=unlock-form]').css('display', 'flex');
       });
+
+      // opertuinites product dynamic name depends on choosen product
+      const opertuinitesProduct = $('form#wf-form-plg-multi-step input[name=product]:checked')
+        .next('.w-form-label')
+        .text();
+      $('[mt-el=productName]').text(opertuinitesProduct);
+      // console.log(opertuinitesProduct);
+
       const segment1 = $('[mt-element=last-step-images]').find('[mt-element=segment_1]').text();
       const segment2 = $('[mt-element=last-step-images]').find('[mt-element=segment_2]').text();
       const segment3 = $('[mt-element=last-step-images]').find('[mt-element=segment_3]').text();
@@ -136,4 +144,9 @@ $('[mt-e=closeSidebar]').on('click', function () {
 
 $('[mt-e=sidebarTrigger]').on('click', function () {
   $('[mt-e=segmentSidebar]').addClass('is--open');
+});
+
+$('[mt-el=topAudinces]').on('click', function () {
+  $('[mt-element=deep-dive-back]').click();
+  $('[mt-e=closeSidebar]').click();
 });
