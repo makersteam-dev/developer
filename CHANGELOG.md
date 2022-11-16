@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.2
+
+### Patch Changes
+
+- 6255363: opertuinites dynamic product name and UI updates on webflow
+
 ## 1.1.1
 
 ### Patch Changes
