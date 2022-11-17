@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.3
+
+### Patch Changes
+
+- faad3f1: competitor update and lottie
+
 ## 1.1.2
 
 ### Patch Changes
