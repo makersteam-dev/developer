@@ -77,22 +77,14 @@ const observer = new IntersectionObserver((entries) => {
       $('[mt-el=productName]').text(opertuinitesProduct);
       // console.log(opertuinitesProduct);
 
-      const segment1 = $('[mt-element=last-step-images]').find('[mt-element=segment_1]').text();
-      const segment2 = $('[mt-element=last-step-images]').find('[mt-element=segment_2]').text();
-      const segment3 = $('[mt-element=last-step-images]').find('[mt-element=segment_3]').text();
-
-      $('.segment2 > text > tspan').text(segment1);
-      $('.segment1 > text > tspan').text(segment2);
-      $('.segment3 > text > tspan').text(segment3);
-
       setTimeout(function () {
         const imageTarget_1 = $('[mt-element=last-step-images]')
-          .find('[mt-element=segment-2-image]')
+          .find('[mt-element=segment-1-image]')
           .attr('src') as string;
         $('.segment1-img > image').attr('href', imageTarget_1);
 
         const imageTarget_2 = $('[mt-element=last-step-images]')
-          .find('[mt-element=segment-1-image]')
+          .find('[mt-element=segment-2-image]')
           .attr('src') as string;
         $('.segment2-img > image').attr('href', imageTarget_2);
 
@@ -100,6 +92,22 @@ const observer = new IntersectionObserver((entries) => {
           .find('[mt-element=segment-3-image]')
           .attr('src') as string;
         $('.segment3-img > image').attr('href', imageTarget_3);
+
+        const segment1 = $('[mt-element=segment_1]').text();
+        const segment2 = $('[mt-element=segment_2]').text();
+        const segment3 = $('[mt-element=segment_3]').text();
+
+        $('.segment1 > text > tspan').text(segment1);
+        $('.segment2 > text > tspan').text(segment2);
+        $('.segment3 > text > tspan').text(segment3);
+
+        const competitor1 = $('[mt-el="competitor1"]').text();
+        const competitor2 = $('[mt-el="competitor2"]').text();
+        const competitor3 = $('[mt-el="competitor3"]').text();
+
+        $('#competitor1 > text > tspan').text(competitor1);
+        $('#competitor2> text > tspan').text(competitor2);
+        $('#competitor3 > text > tspan').text(competitor3);
         // console.log('yesh');
       }, 2000);
 
