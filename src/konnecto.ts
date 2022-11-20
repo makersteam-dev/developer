@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  $(':radio[value=cryptocurrency]').trigger('click');
+  $(':radio[value=baby-products]').trigger('click');
 });
 
 const companyInput = document.querySelector<HTMLInputElement>('[name=company-name]') as HTMLElement;
