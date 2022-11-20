@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.4
+
+### Patch Changes
+
+- 2844ed0: Baby first
+
 ## 1.1.3
 
 ### Patch Changes
