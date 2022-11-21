@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.5
+
+### Patch Changes
+
+- af9b948: First industry click on pageload
+
 ## 1.1.4
 
 ### Patch Changes
