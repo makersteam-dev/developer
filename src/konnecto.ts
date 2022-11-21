@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  $(':radio[value=baby-products]').trigger('click');
+  $('form#wf-form-plg-multi-step input[name=industry]').first().trigger('click');
 });
 
 const companyInput = document.querySelector<HTMLInputElement>('[name=company-name]') as HTMLElement;
