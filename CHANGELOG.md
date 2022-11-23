@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 2.0.0
+
+### Major Changes
+
+- fdca2ba: Published project with hidden fields
+
 ## 1.1.7
 
 ### Patch Changes
