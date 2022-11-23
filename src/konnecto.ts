@@ -28,6 +28,8 @@ companyInput.addEventListener('input', function () {
 $('input[type=radio][name=industry]').on('click', function () {
   const industryVal = $(this).val();
   const industryValFull = $(this).siblings().text();
+  sessionStorage.setItem('industryName', industryValFull);
+
   $('[mt-element=dynamic_label]').text(industryValFull);
   $('.industrie-col-item').hide();
   $(this)
@@ -45,18 +47,10 @@ $('input[type=radio][name=industry]').on('click', function () {
     .first()
     .click();
 });
-
-// give specific id and value for each dynamic radio
-$('input[type=radio][name=product]').each(function () {
-  // get label name
-  const radioName = $(this).next('.w-form-label').text().trim();
-  $(this).val(radioName);
-  // format name to a valid id
-  // replace all spaces & non-alphanumeric characters with dashes
-  // make it lowercase
-  const id = radioName.replace(/\W+/g, '-').toLowerCase();
-  // change the id attribute of the radio
-  $(this).attr('id', id);
+$('input[type=radio][name=product]').on('click', function () {
+  const productVal = $(this).siblings().text();
+  console.log(productVal);
+  sessionStorage.setItem('productName', productVal);
 });
 
 // obserber to change lottie images and all the functions
@@ -76,6 +70,12 @@ const observer = new IntersectionObserver((entries) => {
         .text();
       $('[mt-el=productName]').text(opertuinitesProduct);
       // console.log(opertuinitesProduct);
+
+      // papulate hidden inputs depend on user chosen
+      /*companyNameInput, industryInput, productInput */
+      $('#companyNameInput').val(sessionStorage.getItem('companyName'));
+      $('#industryInput').val(sessionStorage.getItem('industryName'));
+      $('#productInput').val(sessionStorage.getItem('productName'));
 
       setTimeout(function () {
         const imageTarget_1 = $('[mt-element=last-step-images]')
