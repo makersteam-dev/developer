@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.6
+
+### Patch Changes
+
+- df851fe: Big loader update text
+
 ## 1.1.5
 
 ### Patch Changes
