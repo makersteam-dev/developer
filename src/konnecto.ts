@@ -100,6 +100,9 @@ const observer = new IntersectionObserver((entries) => {
         $('.segment1 > text > tspan').text(segment1);
         $('.segment2 > text > tspan').text(segment2);
         $('.segment3 > text > tspan').text(segment3);
+        $('.segment1_2 > text > tspan').text(segment1);
+        $('.segment2_2 > text > tspan').text(segment2);
+        $('.segment3_2 > text > tspan').text(segment3);
 
         const competitor1 = $('[mt-el="competitor1"]').text();
         const competitor2 = $('[mt-el="competitor2"]').text();
