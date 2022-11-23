@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 1.1.7
+
+### Patch Changes
+
+- c51b16a: Update Big lottie
+
 ## 1.1.6
 
 ### Patch Changes
