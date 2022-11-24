@@ -49,7 +49,7 @@ $('input[type=radio][name=industry]').on('click', function () {
 });
 $('input[type=radio][name=product]').on('click', function () {
   const productVal = $(this).siblings().text();
-  console.log(productVal);
+  // console.log(productVal);
   sessionStorage.setItem('productName', productVal);
 });
 
@@ -73,9 +73,9 @@ const observer = new IntersectionObserver((entries) => {
 
       // papulate hidden inputs depend on user chosen
       /*companyNameInput, industryInput, productInput */
-      $('#companyNameInput').val(sessionStorage.getItem('companyName'));
-      $('#industryInput').val(sessionStorage.getItem('industryName'));
-      $('#productInput').val(sessionStorage.getItem('productName'));
+      $('#companyNameInput').val(sessionStorage.getItem('companyName') as string);
+      $('#industryInput').val(sessionStorage.getItem('industryName') as string);
+      $('#productInput').val(sessionStorage.getItem('productName') as string);
 
       setTimeout(function () {
         const imageTarget_1 = $('[mt-element=last-step-images]')

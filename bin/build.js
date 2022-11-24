@@ -5,7 +5,7 @@ const buildDirectory = 'dist';
 const production = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
-const entryPoints = ['src/index.ts', 'src/konnecto.ts', 'src/multistep.ts'];
+const entryPoints = ['src/index.ts', 'src/konnecto.ts', 'src/multistep.ts', 'src/grid-solution.ts'];
 /**
  * Default Settings
  * @type {esbuild.BuildOptions}
