@@ -10,6 +10,7 @@ const entryPoints = [
   'src/konnecto.ts',
   'src/multistep.ts',
   'src/kriisp/grid-solution.ts',
+  'src/kriisp/careers.ts',
 ];
 /**
  * Default Settings
