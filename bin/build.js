@@ -11,7 +11,6 @@ const entryPoints = [
   'src/multistep.ts',
   'src/kriisp/grid-solution.ts',
   'src/kriisp/careers.ts',
-  'src/kriisp/multistep.ts',
 ];
 /**
  * Default Settings

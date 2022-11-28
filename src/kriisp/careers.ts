@@ -1,6 +1,4 @@
-window.Webflow ||= [];
-
-window.Webflow.push(() => {
+document.addEventListener('DOMContentLoaded', () => {
   const applyButton = document.querySelectorAll('[mt-el=apply-button]');
   const backToButton = document.querySelectorAll('[mt-el=back-to-job-info]');
   const jobInfoDiv = document.querySelectorAll('[mt-el=job-info-wrap]');
