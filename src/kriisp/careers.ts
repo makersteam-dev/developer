@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const multiStepDiv = document.querySelectorAll('[mt-el=multi-step-wrap]');
 
   $(applyButton).on('click', function () {
+    const firstInput = document.getElementById('Name').focus();
     $(jobInfoDiv).css('display', 'none');
     $(multiStepDiv).css('display', 'block');
   });
