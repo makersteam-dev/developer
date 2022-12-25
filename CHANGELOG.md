@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 2.0.1
+
+### Patch Changes
+
+- d509a50: Added Modals
+
 ## 2.0.0
 
 ### Major Changes
