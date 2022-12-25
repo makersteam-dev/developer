@@ -60,10 +60,17 @@ const observer = new IntersectionObserver((entries) => {
     if (intersecting) {
       $('[data-form=back-btn]').hide();
       // Open opertunities modal
-      $('[mt-element=open-modal]').on('click', function () {
-        $('[mt-element=unlock-form]').css('display', 'flex');
+      $('[mt-element=open-modal-button]').on('click', function () {
+        $('[mt-element=unlock-form-button]').css('display', 'flex');
       });
 
+      $('[mt-element=open-modal-performance-page]').on('click', function () {
+        $('[mt-element=unlock-form-performance-page]').css('display', 'flex');
+      });
+
+      $('[mt-element=open-modal-opportunities-page]').on('click', function () {
+        $('[mt-element=unlock-form-opportunities-page]').css('display', 'flex');
+      });
       // opertuinites product dynamic name depends on choosen product
       const opertuinitesProduct = $('form#wf-form-plg-multi-step input[name=product]:checked')
         .next('.w-form-label')
