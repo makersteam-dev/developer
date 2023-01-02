@@ -8,30 +8,30 @@ const companyTextsSelector = document.querySelectorAll('[mt-element=company-name
 // on change of company input function
 companyInput.addEventListener('input', function () {
   const company_name = $('[name=company-name]').val() as string;
-  if (companyName.length < 1) {
+  if (company_name.length < 1) {
     $('.company-lottie-name > text > tspan').text('Your Company');
     $('.company-lottie-name').css({
       'font-weight': '400',
       fill: 'rgb(227,233,238)',
     });
-  } else if (companyName.length > 10) {
-    $('.company-lottie-name > text > tspan').text(companyName);
+  } else if (company_name.length > 10) {
+    $('.company-lottie-name > text > tspan').text(company_name);
     $('.company-lottie-name').css({
       'font-weight': '600',
       'font-size': '70px',
       fill: 'black',
     });
   } else {
-    $('.company-lottie-name > text > tspan').text(companyName);
+    $('.company-lottie-name > text > tspan').text(company_name);
     $('.company-lottie-name').css({
       'font-weight': '600',
       fill: 'black',
       'font-size': '150px',
     });
-    $('.competitorName > text > tspan').text(companyName);
-    sessionStorage.setItem('companyName', companyName);
+    $('.competitorName > text > tspan').text(company_name);
+    sessionStorage.setItem('company_name', company_name);
     for (let i = 0; i < companyTextsSelector.length; i++) {
-      companyTextsSelector[i].textContent = companyName;
+      companyTextsSelector[i].textContent = company_name;
     }
   }
 });
@@ -91,8 +91,8 @@ const observer = new IntersectionObserver((entries) => {
       // console.log(opertuinitesProduct);
 
       // papulate hidden inputs depend on user chosen
-      /*companyNameInput, industryInput, productInput */
-      $('#companyNameInput').val(sessionStorage.getItem('companyName') as string);
+      /*company_nameInput, industryInput, productInput */
+      $('#company_nameInput').val(sessionStorage.getItem('company_name') as string);
       $('#industryInput').val(sessionStorage.getItem('industryName') as string);
       $('#productInput').val(sessionStorage.getItem('productName') as string);
 
