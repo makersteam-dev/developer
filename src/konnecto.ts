@@ -8,18 +8,30 @@ const companyTextsSelector = document.querySelectorAll('[mt-element=company-name
 // on change of company input function
 companyInput.addEventListener('input', function () {
   const company_name = $('[name=company-name]').val() as string;
-  if (company_name.length < 1) {
+  if (companyName.length < 1) {
     $('.company-lottie-name > text > tspan').text('Your Company');
-    $('.company-lottie-name').css('font-weight', '400').css('fill', 'rgb(227,233,238)');
+    $('.company-lottie-name').css({
+      'font-weight': '400',
+      fill: 'rgb(227,233,238)',
+    });
+  } else if (companyName.length > 10) {
+    $('.company-lottie-name > text > tspan').text(companyName);
+    $('.company-lottie-name').css({
+      'font-weight': '600',
+      'font-size': '70px',
+      fill: 'black',
+    });
   } else {
-    $('.company-lottie-name > text > tspan').text(company_name);
-    $('.company-lottie-name').css('font-weight', '600').css('fill', 'black');
-
-    $('.competitorName > text > tspan').text(company_name);
-    sessionStorage.setItem('companyName', company_name);
-
+    $('.company-lottie-name > text > tspan').text(companyName);
+    $('.company-lottie-name').css({
+      'font-weight': '600',
+      fill: 'black',
+      'font-size': '150px',
+    });
+    $('.competitorName > text > tspan').text(companyName);
+    sessionStorage.setItem('companyName', companyName);
     for (let i = 0; i < companyTextsSelector.length; i++) {
-      companyTextsSelector[i].textContent = company_name;
+      companyTextsSelector[i].textContent = companyName;
     }
   }
 });
