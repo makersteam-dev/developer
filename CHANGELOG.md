@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 2.0.3
+
+### Patch Changes
+
+- 0ac6936: Company name text change size depands on length
+
 ## 2.0.2
 
 ### Patch Changes
