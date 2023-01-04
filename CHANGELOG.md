@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 2.0.4
+
+### Patch Changes
+
+- 5ac0476: Update the flow utm parameter and some extra stuff
+
 ## 2.0.3
 
 ### Patch Changes
