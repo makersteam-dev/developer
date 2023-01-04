@@ -181,3 +181,29 @@ $('[mt-el=topAudinces]').on('click', function () {
   $('[mt-element=deep-dive-back]').click();
   $('[mt-e=closeSidebar]').click();
 });
+
+/*0401/2023 */
+
+document.querySelector('[get-started="button-1"]').addEventListener('click', () => {
+  if (sessionStorage.getItem('company_name')) {
+    const utm = new URLSearchParams(window.location.search);
+    utm.set('company-name', sessionStorage.getItem('company_name'));
+    window.history.pushState({}, '', `${window.location.pathname}?${utm}`);
+  }
+});
+
+document.querySelector('[get-started="button-2"]').addEventListener('click', () => {
+  if (sessionStorage.getItem('industryName')) {
+    const utm = new URLSearchParams(window.location.search);
+    utm.set('industry-name', sessionStorage.getItem('industryName'));
+    window.history.pushState({}, '', `${window.location.pathname}?${utm}`);
+  }
+});
+
+document.querySelector('[get-started="button-3"]').addEventListener('click', () => {
+  if (sessionStorage.getItem('productName')) {
+    const utm = new URLSearchParams(window.location.search);
+    utm.set('product-name', sessionStorage.getItem('productName'));
+    window.history.pushState({}, '', `${window.location.pathname}?${utm}`);
+  }
+});
