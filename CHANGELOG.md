@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 2.0.5
+
+### Patch Changes
+
+- 3a8aee9: Lottie break lines
+
 ## 2.0.4
 
 ### Patch Changes
