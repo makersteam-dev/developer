@@ -197,7 +197,7 @@ function saveFilledInput() {
 
   localStorage.removeItem('filledInput');
   localStorage.setItem('filledInput', JSON.stringify(filledInput));
-  console.log(savedFilledInput);
+  // console.log(savedFilledInput);
 }
 
 function updateStep() {
@@ -233,7 +233,7 @@ function updateStep() {
     $(steps[x]).find(`[data-answer="${selection[0].selected}"]`).show();
   } else {
     $(steps[x]).find(`[data-answer="${answer}"]`).show();
-    console.log($(steps[x]).find(`[data-answer="${answer}"]`).find(':input'));
+    // console.log($(steps[x]).find(`[data-answer="${answer}"]`).find(':input'));
   }
 
   //hide unhide button
@@ -349,7 +349,7 @@ function validation(
         }
       });
   } else {
-    console.log('logic extra');
+    // console.log('logic extra');
     if ($(steps[x]).find('[data-answer]:visible').find(':input').is('[type="checkbox"]')) {
       if (checkCount === '*' || checkCount > $(steps[x]).find(':input[type="checkbox"]').length) {
         $(steps[x])
@@ -415,7 +415,7 @@ function validation(
         } else {
           inputFilled = false;
         }
-        console.log(empReqInput);
+        // console.log(empReqInput);
       });
 
     $(steps[x])
@@ -444,7 +444,7 @@ function validation(
 function nextStep() {
   x++;
   if (x <= steps.length - 1) {
-    console.log(x, steps.length - 1);
+    // console.log(x, steps.length - 1);
     updateStep();
     if (memory) {
       saveFilledInput();
@@ -509,7 +509,7 @@ $(steps)
       selections.push({ step: x, selected: answer });
 
       if ($(steps[x]).find('[data-radio-skip]').data('radio-skip') === true) {
-        console.log('skip');
+        // console.log('skip');
         if (
           textareaLength === 0 &&
           textInputLength === 0 &&
