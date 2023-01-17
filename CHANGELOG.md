@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 2.0.6
+
+### Patch Changes
+
+- 3e7c419: Lottie render updates
+
 ## 2.0.5
 
 ### Patch Changes
