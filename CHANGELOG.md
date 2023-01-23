@@ -1,5 +1,11 @@
 # @makersteam-dev/developer
 
+## 3.0.0
+
+### Major Changes
+
+- 9bb3f17: Ready For Publish after rendering all lottie
+
 ## 2.0.6
 
 ### Patch Changes
